@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenpreature converter</title>
+    <!-------css link----->
+    <link rel="stylesheet" href="style3.css">
+    <!--------box icons---->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"/>
+    <!------fontawesome cdn link-->
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+<div class="tempreature-converter">
+    <!---mobile icon---->
+    <div class="mobile">
+     <p>9.30 AM</p>
+     <div>
+        <i class='bx bx-signal-5' ></i>
+        <i class='bx bx-wifi'></i>
+        <i class='bx bxs-battery' ></i>
+     </div>
+    </div>
+    <h2 class="title">Tempreature converter</h2>
+
+    <!-----showing result here---->
+    <div class="result">
+        <span class="result-heading">Result(Celsius)</span>
+        <h2 class="celsius-value" id="celsius">1</h2>
+    </div>
+    <!---input-field---->
+    <div class="degree-type">
+        <!---for degrees-->
+        <div class="degree-field">
+            <label for="degree">degrees</label>
+            <input type="number" name="degree" id="degree">
+        </div>
+        <!----for option selection---->
+        <div class="temp-field">
+            <label for="temp-type">type</label>
+            <select name="tempreatures" id="temp-type" autocomplete="on">
+                <option value="fahrenheit" id="fahrenheit">fahrenheit</option>
+                <option value="celsius" id="celsius">celsius</option>
+            </select>
+        </div>
+    </div>
+    <button id="convert-btn">convert</button>
+</div>
+
+    </div>
+    <!------script tags----->
+    <script src="app.js"></script>
+
+    </script>
+</body>
+</html>
